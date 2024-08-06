@@ -1,0 +1,30 @@
+[
+    {
+        "valor": "Miembro",
+        "nivel": 6
+    },
+    {
+        "valor": "Presidente",
+        "nivel": 1
+    },
+    {
+        "valor": "Prosecretario",
+        "nivel": 4
+    },
+    {
+        "valor": "Secretario",
+        "nivel": 3
+    },
+    {
+        "valor": "Vicepresidente",
+        "nivel": 2
+    },
+    {
+        "valor": "Vocal",
+        "nivel": 5
+    },
+    {
+        "valor": "Suplente",
+        "nivel": 7
+    }
+]

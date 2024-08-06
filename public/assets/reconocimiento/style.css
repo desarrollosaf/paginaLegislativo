@@ -1,0 +1,90 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,600,700,800';
+
+body {
+	margin: 0;
+	background: url(/images/bkgd.png) top center no-repeat fixed;
+	background-size: cover;
+}
+
+h1 {
+	color:rgba(255,255,255,1.00);
+	font-family:'Open Sans', sans-serif;
+	font-size:1.8em;
+	font-weight:700;
+	line-height:135%;
+	margin-bottom:10px;
+	text-align: left;
+}
+
+h2 {
+	color:rgba(255,255,255,1.00);
+	font-family:'Open Sans', sans-serif;
+	font-size:1.5em;
+	font-weight:500;
+	line-height:135%;
+	margin-bottom:10px;
+	text-align: left;
+}
+
+p {
+	color:rgba(255,255,255,1.00);
+	font-family:'Open Sans', sans-serif;
+	font-size:1.0em;
+	font-weight:300;
+	line-height:135%;
+	margin-bottom:10px;
+	text-align: left;
+}
+
+/* TABLAS */
+table{
+	overflow-x:auto;
+	width:100%;
+	max-width:980px;
+}
+
+table thead th {
+	font-family:'Open Sans', sans-serif;
+	font-size:1.0em;
+	font-weight:500;
+	color:#FFF;
+	background:linear-gradient(75deg, rgba(189,129,35,1.00), rgba(247,228,144,1.00), rgba(189,129,35,1.00));
+	border:none;
+	padding:5px 15px;
+	text-align:center;
+	text-shadow: rgba(42,29,7,1.00) 1px 1px 3px;
+	border-radius:5px;
+}
+
+table tr td {
+	font-family:'Open Sans', sans-serif;
+	font-size:1.00em;
+	font-weight:300;
+	color:rgba(255,255,255,1.00);
+	border:none;
+	vertical-align:top;
+	padding:10px;
+	text-align:left;
+	border-radius:2px;
+}
+
+table tfoot td {
+	font-family:'Open Sans', sans-serif;
+	background:rgba(0,0,0,1.00);
+	border:none;
+	color:#FFF;
+	font-weight:300;
+	font-size:1em;
+	padding:5px;
+}
+
+tr:nth-child(even) {
+	background:rgba(0,0,0,0.70);
+}
+
+tr:nth-child(odd) {
+	background:rgba(0,0,0,0.30);
+}
