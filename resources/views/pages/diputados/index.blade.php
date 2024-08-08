@@ -331,7 +331,7 @@
                             html += '<div class="bg-lighter rounded-top-4 position-relative h-100 w-100">';
                             html += '<figure class="mb-0 ratio ratio-1x1">';
                             if (v.diputado.foto) {
-                                html += '<img src="' + v.diputado.foto.path + '" class="img-fluid">'
+                                html += '<img src="'+ 'storage/files/legislativoedomex/' + v.diputado.foto.path + '" class="img-fluid">'
                             }
                             html += '</figure>';
                             html += '<div class="position-absolute top-0 end-0 p-16">' + v.partido.siglas + '</div>';
@@ -389,7 +389,7 @@
                                 html += '<div class="bg-lighter rounded-top-4 position-relative h-100 w-100">';
                                 html += '<figure class="mb-0 ratio ratio-1x1">';
                                 if (v.integrante_legislatura.diputado.foto) {
-                                    html += '<img src="' + v.integrante_legislatura.diputado.foto.path + '" class="img-fluid">'
+                                    html += '<img src="' + 'storage/files/legislativoedomex/' + v.integrante_legislatura.diputado.foto.path + '" class="img-fluid">'
                                 }
                                 html += '</figure>';
                                 html += '<div class="position-absolute top-0 end-0 p-16">' + v.integrante_legislatura.partido.siglas + '</div>';
