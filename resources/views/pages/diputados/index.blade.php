@@ -326,12 +326,14 @@
                         html += '<div class="row align-items-stretch g-24">';
 
                         $.each(data.data, function (i, v) {
+
                             html += '<div class="col-12 col-lg-3">'
                             html += '<div class="card-diputado-sm">';
                             html += '<div class="bg-lighter rounded-top-4 position-relative h-100 w-100">';
                             html += '<figure class="mb-0 ratio ratio-1x1">';
                             if (v.diputado.foto) {
                                 html += '<img src="'+ 'storage/files/legislativoedomex/' + v.diputado.foto.path + '" class="img-fluid">'
+                                console.log('storage/files/legislativoedomex/' + v.diputado.foto.path )
                             }
                             html += '</figure>';
                             html += '<div class="position-absolute top-0 end-0 p-16">' + v.partido.siglas + '</div>';
@@ -440,7 +442,7 @@
                     countGeneralCheck.push(this.value);
                 });
                 let msg = "";
-                console.log(countGeneralCheck.length)
+                // console.log(countGeneralCheck.length)
                 if (countGeneralCheck.length > 0) {
                     msg = countGeneralCheck.length + " Filtros activos";
                 } else {
@@ -451,7 +453,7 @@
 
             $(".order-list").click(function () {
                 let valor = parseFloat($(this).data("orden"));
-                console.log($(this).data("orden"))
+                // console.log($(this).data("orden"))
 
                 let sortedData;
                 switch (data.tipo) {
