@@ -172,7 +172,7 @@
                                         class="mb-0 rounded-top-4 overflow-hidden position-relative container-fluid">
                                         <img
                                             @if(isset($item->foto->first()->path))
-                                                src="{{asset($item->foto->first()->path)}}"
+                                                src="'storage/files/legislativoedomex/'{{asset($item->foto->first()->path)}}"
                                             @endif alt="" class="img-fluid">
                                         <span
                                             class="pill-fecha position-absolute start-16 top-16 rounded-pill px-16 py-8 lh-1">
@@ -240,7 +240,7 @@
                                                 <div class="position-relative h-100 w-100">
                                                     <div class="ratio ratio-1x1"><img
                                                             @if(isset($dip->integranteLegislatura->diputado->foto->path))
-                                                            src="{{asset($dip->integranteLegislatura->diputado->foto->path)}}"  @endif
+                                                            src="'storage/files/legislativoedomex/'{{asset($dip->integranteLegislatura->diputado->foto->path)}}"  @endif
                                                             class="img-fluid">
                                                     </div>
                                                     <div class="position-absolute top-0 end-0 p-16">
