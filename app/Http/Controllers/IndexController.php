@@ -20,7 +20,7 @@ class IndexController extends Controller
     public function index()
     {
 //        $comunicados = Comunicado::where('publicado',0)->orderByRaw('comunicado+0 desc')->get();
-        $comunicados = where('publicado',0)->orderByRaw('comunicado+0 desc')->with(["foto" => function ($q) {
+        $comunicados = Comunicado::where('publicado',0)->orderByRaw('comunicado+0 desc')->with(["foto" => function ($q) {
             $q->orderBy('path', 'asc');
         }])->take(9)->get();
         $comisionGeneral = Comision::where("nombre", "Junta de Coordinación Política (Jucopo)")->first();
