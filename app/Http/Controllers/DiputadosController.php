@@ -174,7 +174,7 @@ class DiputadosController extends Controller
                 ->whereIn("id", $comision)->get();
             return json_encode(["tipo" => "comision", "data" => $comisiones]);
         }
-//        dd($query);
+//        dd($query->get()[0]->diputado->foto);
         $this->getWith($query);
         return json_encode(["tipo" => "simple", "data" => $query->get()]);
 

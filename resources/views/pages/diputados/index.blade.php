@@ -326,7 +326,7 @@
                         html += '<div class="row align-items-stretch g-24">';
 
                         $.each(data.data, function (i, v) {
-
+                            // console.log('storage/files/legislativoedomex/' + v.diputado.foto.path )
                             html += '<div class="col-12 col-lg-3">'
                             html += '<div class="card-diputado-sm">';
                             html += '<div class="bg-lighter rounded-top-4 position-relative h-100 w-100">';
