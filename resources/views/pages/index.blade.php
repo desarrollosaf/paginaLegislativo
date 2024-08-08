@@ -154,10 +154,6 @@
                                         <figure class="mb-0 position-absolute h-100 w-100"><img
                                                 src="https://legislativoedomex.gob.mx/storage/img/fotos/banners/BannerUAS_500x500_1.jpg"
                                                 alt="" class="position-absolute h-100 w-100"></figure>
-{{--                                        <div class="position-absolute bottom-0 p-16 p-lg-24 text-white">--}}
-{{--                                            <h4 class="text-dark">--}}
-{{--                                                ¡Abrir!</h4>--}}
-{{--                                        </div>--}}
                                     </a>
 
                                 </div>
@@ -172,7 +168,7 @@
                                         class="mb-0 rounded-top-4 overflow-hidden position-relative container-fluid">
                                         <img
                                             @if(isset($item->foto->first()->path))
-                                                src="'storage/files/legislativoedomex/'{{asset($item->foto->first()->path)}}"
+                                                src="{{asset('storage/files/legislativoedomex/'.$item->foto->first()->path)}}"
                                             @endif alt="" class="img-fluid">
                                         <span
                                             class="pill-fecha position-absolute start-16 top-16 rounded-pill px-16 py-8 lh-1">
@@ -240,7 +236,8 @@
                                                 <div class="position-relative h-100 w-100">
                                                     <div class="ratio ratio-1x1"><img
                                                             @if(isset($dip->integranteLegislatura->diputado->foto->path))
-                                                            src="'storage/files/legislativoedomex/'{{asset($dip->integranteLegislatura->diputado->foto->path)}}"  @endif
+                                                            src="{{asset('storage/files/legislativoedomex/'.$dip->integranteLegislatura->diputado->foto->path)}}"
+                                                            @endif
                                                             class="img-fluid">
                                                     </div>
                                                     <div class="position-absolute top-0 end-0 p-16">
@@ -411,7 +408,8 @@
                                     <div
                                         class="comunicado-destacado bg-darker position-relative rounded-4 overflow-hidden">
                                         <figure class="ratio ratio-16x9 mb-0"><img
-                                                @if($comunicado->foto->first()->path)src="{{asset($comunicado->foto->first()->path)}}"
+                                                @if($comunicado->foto->first()->path)
+                                                    src="{{asset('storage/files/legislativoedomex/'.$comunicado->foto->first()->path)}}"
                                                 @endif alt="">
                                         </figure>
                                         <div

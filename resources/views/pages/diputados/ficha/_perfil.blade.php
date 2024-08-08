@@ -8,7 +8,7 @@
                     <div class="col-12 col-lg-5">
                         <div class="position-relative h-100 w-100">
                             <div class="ratio ratio-1x1"><img
-                                    src="'storage/files/legislativoedomex/'{{asset($data->foto->path)}}" class="img-fluid">
+                                    src="{{asset('storage/files/legislativoedomex/'.$data->foto->path)}}" class="img-fluid">
                             </div>
 
                             <div
