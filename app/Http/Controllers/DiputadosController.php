@@ -135,6 +135,9 @@ class DiputadosController extends Controller
             $genero = null;
         }
         $query = IntegranteLegislatura::query();
+        $query->whereHas('diputado', function ($q) {
+            $q->where('status', 1);
+        });
         if ($request->has("partido")) {
             $query->whereIn("partido_id", $request->get("partido"));
         }

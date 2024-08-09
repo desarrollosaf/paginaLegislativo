@@ -28,7 +28,7 @@
             <div class="mb-24">
                 <div class="noticia-destacada bg-darker position-relative rounded-4 overflow-hidden">
                     <figure class="ratio ratio-16x9 mb-0" style="--bs-aspect-ratio: 66.25%;">
-                        <img src="{{asset($data->first()->foto->last()->path)}}"
+                        <img src="{{asset('storage/files/legislativoedomex/'.$data->first()->foto->last()->path)}}"
                             alt="">
                     </figure>
                     <div class="d-flex flex-column align-items-stretch align-items-md-start justify-content-end p-16 p-lg-24 pt-0 col-lg-8 text-white position-lg-absolute start-0 bottom-0">
@@ -49,7 +49,7 @@
                                     <figure class="mb-0 rounded-top-4 overflow-hidden position-relative">
                                         <img
                                             @if(isset($item->foto->last()->path))
-                                                src="{{asset($item->foto->last()->path)}}"
+                                                src="{{asset('storage/files/legislativoedomex/'.$item->foto->last()->path)}}"
                                             @endif
                                             alt="" class="img-fluid">
                                         <span

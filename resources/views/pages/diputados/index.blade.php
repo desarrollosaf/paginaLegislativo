@@ -333,7 +333,7 @@
                             html += '<figure class="mb-0 ratio ratio-1x1">';
                             if (v.diputado.foto) {
                                 html += '<img src="'+ 'storage/files/legislativoedomex/' + v.diputado.foto.path + '" class="img-fluid">'
-                                console.log('storage/files/legislativoedomex/' + v.diputado.foto.path )
+                                // console.log('storage/files/legislativoedomex/' + v.diputado.foto.path )
                             }
                             html += '</figure>';
                             html += '<div class="position-absolute top-0 end-0 p-16">' + v.partido.siglas + '</div>';

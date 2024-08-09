@@ -14,7 +14,7 @@
                                 <div class="noticia bg-light rounded-4 overflow-hidden mb-24">
                                         <figure class="ratio ratio-16x9 mb-0" style="--bs-aspect-ratio: 66.25%;">
                                             @if(isset($data->foto->first()->path))
-                                                <img src="{{asset($data->foto->first()->path)}}" alt="">
+                                                <img src="{{asset('storage/files/legislativoedomex/'.$data->foto->first()->path)}}" alt="">
                                             @endif
                                         </figure>
                                 </div>
@@ -39,7 +39,7 @@
                                     @foreach($data->foto as $item)
                                         <div class="col-12 col-lg-4">
                                             <div class="rounded-4 overflow-hidden">
-                                                <img src="{{asset($item->path)}}" alt="" class="img-fluid">
+                                                <img src="{{asset('storage/files/legislativoedomex/'.$item->path)}}" alt="" class="img-fluid">
                                             </div>
                                         </div>
                                     @endforeach
