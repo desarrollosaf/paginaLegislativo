@@ -640,7 +640,7 @@
 
                         @endforeach
                     </div>
-                    <a href="{{asset("sesiones")}}" class="btn btn-outline-dark border-2 rounded-4 py-16 px-32 d-block">
+                    <a href="{{asset("")}}" class="btn btn-outline-dark border-2 rounded-4 py-16 px-32 d-block">
                         Ver todas las sesiones</a>
                 </div>
                 <div class="py-24">
@@ -650,11 +650,11 @@
                         </div>
                         @foreach($banners as $key => $item)
                             <div class="col-12 col-lg-4">
-                                <a href="{{asset($item->url)}} " target="_blank" style="text-decoration: none">
+                                <a @if($item->type == 1) href="{{asset('storage/files/legislativoedomex/'.$item->url)}}"  @else href="{{asset($item->url)}}" @endif target="_blank" style="text-decoration: none">
                                     <div class="card-shadow-hover rounded-4">
                                         <figure
                                             class="mb-0 rounded-top-4 overflow-hidden position-relative container-fluid">
-                                            <img @if(isset($item->foto->path)) src="{{asset($item->foto->path)}}"
+                                            <img @if(isset($item->foto->path)) src="{{asset('storage/files/legislativoedomex/'.$item->foto->path)}}"
                                                  @endif  alt="" class="img-fluid" width="100%">
                                         </figure>
                                     </div>
